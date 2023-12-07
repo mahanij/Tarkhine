@@ -1,0 +1,245 @@
+@mixin flex($j, $a) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin position($p, $r, $t) {
+  position: $p;
+  right: $r;
+  top: $t;
+}
+
+$full: 100%;
+.hero {
+  @include size($full, 100%);
+  background-color: rgb(255, 255, 255);
+  .last-part {
+    @include flex(space-around, center);
+    @include size($full, 40%);
+    color: var(--neutral-353535, #353535);
+    text-align: center;
+    font-family: Estedad-VF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 36px */
+    text-transform: capitalize;
+    .last-part-1 {
+      border-radius: 8px;
+      @include size(20%, 50%);
+      @include flex(space-around, center);
+      flex-direction: column;
+      background-color: #417f56;
+      button {
+        display: flex;
+        width: 155px;
+        height: 48px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        background: var(--neutral-e-1-e-1-e-1, #f9f9f9);
+        color: var(--neutral-353535, #353535);
+        text-align: center;
+        /* Body/XL */
+        font-family: Estedad-VF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 36px */
+        text-transform: capitalize;
+      }
+    }
+    .last-part-2 {
+      border-radius: 8px;
+      @include size(20%, 50%);
+      @include flex(space-around, center);
+      flex-direction: column;
+      background-color: #417f56;
+      button {
+        display: flex;
+        width: 155px;
+        height: 48px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        background: var(--neutral-e-1-e-1-e-1, #f9f9f9);
+        color: var(--neutral-353535, #353535);
+        text-align: center;
+        /* Body/XL */
+        font-family: Estedad-VF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 36px */
+        text-transform: capitalize;
+      }
+    }
+    .last-part-3 {
+      border-radius: 8px;
+      @include size(20%, 50%);
+      @include flex(space-around, center);
+      flex-direction: column;
+      background-color: #417f56;
+      button {
+        display: flex;
+        width: 155px;
+        height: 48px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        background: var(--neutral-e-1-e-1-e-1, #f9f9f9);
+        color: var(--neutral-353535, #353535);
+        text-align: center;
+        /* Body/XL */
+        font-family: Estedad-VF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 36px */
+        text-transform: capitalize;
+      }
+    }
+    .last-part-4 {
+      border-radius: 8px;
+      @include size(20%, 50%);
+      @include flex(space-around, center);
+      flex-direction: column;
+      background-color: #417f56;
+      button {
+        display: flex;
+        width: 155px;
+        height: 48px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        background: var(--neutral-e-1-e-1-e-1, #f9f9f9);
+        color: var(--neutral-353535, #353535);
+        text-align: center;
+        /* Body/XL */
+        font-family: Estedad-VF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 36px */
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  header {
+    .slaider {
+      width: $full;
+    }
+    nav {
+      @include size($full, 115px);
+      @include flex(space-around, center);
+      .ul-seconde {
+        @include size(808px, 33px);
+        @include flex(space-around, center);
+        .li-6 {
+          color: var(--neutral-717171, #717171);
+          text-align: center;
+
+          /* Body/XL */
+          font-family: Estedad-VF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%; /* 36px */
+          text-transform: capitalize;
+        }
+        .li-5 {
+          color: var(--neutral-717171, #717171);
+          text-align: center;
+
+          /* Body/XL */
+          font-family: Estedad-VF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%; /* 36px */
+          text-transform: capitalize;
+        }
+        .li-4 {
+          color: var(--neutral-717171, #717171);
+          text-align: center;
+
+          /* Body/XL */
+          font-family: Estedad-VF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%; /* 36px */
+          text-transform: capitalize;
+        }
+        .li-3 {
+          color: var(--neutral-717171, #717171);
+          text-align: center;
+
+          /* Body/XL */
+          font-family: Estedad-VF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%; /* 36px */
+          text-transform: capitalize;
+        }
+        .li-2 {
+          color: var(--neutral-717171, #717171);
+          text-align: center;
+          /* Body/XL */
+          font-family: Estedad-VF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%; /* 36px */
+          text-transform: capitalize;
+        }
+        .li-1 {
+          color: var(--green-primary, #417f56);
+          text-align: center;
+          font-family: Estedad-VF;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+          div {
+            width: 100px;
+            height: 1px;
+            background-color: #417f56;
+          }
+        }
+      }
+      .ul-first {
+        @include flex(space-around, center);
+        @include size(154px, 40px);
+        img {
+          @include size(40px, 40px);
+        }
+        svg {
+          @include size(24px, 24px);
+        }
+        li {
+          width: 40px;
+          height: 40px;
+          background-color: rgb(225, 236, 228);
+          @include flex(center, center);
+        }
+      }
+    }
+  }
+}
